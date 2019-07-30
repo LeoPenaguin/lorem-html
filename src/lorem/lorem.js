@@ -97,4 +97,45 @@ function getBlockquote (number) {
   return element
 }
 
-export {getP, getPre, getHeadline, getList, getBlockquote}
+function getTable (number) {
+  let loremOptions = {
+    count: 1,
+    format: 'plain',
+    units: 'sentence',
+    sentenceLowerBound: 1,
+    sentenceUpperBound: 4
+  }
+
+  let element = []
+
+  for (var i = 0; i < number; i++) {
+    let table = []
+    table.push(
+      '<table>',
+      '<tr>',
+      '<th>' + loremIpsum(loremOptions) + '</th>',
+      '<th>' + loremIpsum(loremOptions) + '</th>',
+      '<th>' + loremIpsum(loremOptions) + '</th>',
+      '<th>' + loremIpsum(loremOptions) + '</th>',
+      '</tr>',
+      '<tr>',
+      '<td>' + loremIpsum(loremOptions) + '</td>',
+      '<td>' + loremIpsum(loremOptions) + '</td>',
+      '<td>' + loremIpsum(loremOptions) + '</td>',
+      '<td>' + loremIpsum(loremOptions) + '</td>',
+      '</tr>',
+      '<tr>',
+      '<td>' + loremIpsum(loremOptions) + '</td>',
+      '<td>' + loremIpsum(loremOptions) + '</td>',
+      '<td>' + loremIpsum(loremOptions) + '</td>',
+      '<td>' + loremIpsum(loremOptions) + '</td>',
+      '</tr>',
+      '</table>'
+    )
+    element.push(table.join(''))
+  }
+
+  return element
+}
+
+export {getP, getPre, getHeadline, getList, getBlockquote, getTable}

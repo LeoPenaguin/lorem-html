@@ -5,7 +5,8 @@ import {
   getHeadline,
   getPre,
   getList,
-  getBlockquote
+  getBlockquote,
+  getTable
 } from './lorem'
 
 function fillContent (parsed) {
@@ -39,6 +40,9 @@ function fillContent (parsed) {
         break
       case 'blockquote':
         item.values = getBlockquote(count)
+        break
+      case 'table':
+        item.values = getTable(count)
         break
       default:
         console.error('Aucune balise correspondante')

@@ -35,51 +35,90 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .main {
+  display: flex;
+  flex-direction: row;
   background: #0C222F;
   flex: 1;
   color: white;
   overflow: auto;
-}
-pre {
-  white-space: pre-wrap;
-}
-</style>
-
-<style>
-.main {
-  display: flex;
-  flex-direction: row;
-}
-.main .code {
-  width: 50vw;
-}
-.main .code pre {
-  margin: 0;
-  height: 100%;
-  box-sizing: border-box;
-}
-.main .code pre code.hljs {
-  margin: 0;
-  height: 100%;
-  background: transparent;
-  font-size: 1.5rem;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-.main .escaped {
-  width: 50vw;
-  padding: 2rem;
-  word-break: break-all;
-  overflow: scroll;
-  box-sizing: border-box;
-  font-size: 1.5rem;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-}
-.main .escaped pre {
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  pre {
+    white-space: pre-wrap;
+  }
+  .code {
+    width: 50vw;
+    pre {
+      margin: 0;
+      height: 100%;
+      box-sizing: border-box;
+      code.hljs {
+        margin: 0;
+        height: 100%;
+        background: transparent;
+        font-size: 1.5rem;
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .escaped {
+    width: 50vw;
+    padding: 2rem;
+    word-break: break-all;
+    overflow: scroll;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    pre {
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      color: #f44336;
+      border-left: 2px solid #f44336;
+      padding-left: 1rem;
+    }
+    code {
+      color: #E91E63;
+    }
+    p {
+      color: #9C27B0;
+      letter-spacing: 0.5px;
+    }
+    blockquote {
+      color: #673AB7;
+      padding: 1rem;
+      border: 2px dotted #673AB7;
+      margin-left: 0;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 1rem;
+    }
+    table {
+      color: #3F51B5;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1rem 0;
+      tr, th, td {
+        border: 2px solid #3F51B5;
+        padding: 0.5rem;
+      }
+    }
+    ul {
+      color: #2196F3;
+    }
+    ol {
+      color: #03A9F4;
+    }
+    h1 {
+      color: #00BCD4;
+    }
+    h2 {
+      color: #009688;
+    }
+    h3 {
+      color: #4CAF50;
+    }
+  }
 }
 </style>
