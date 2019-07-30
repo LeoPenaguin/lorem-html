@@ -15,6 +15,6 @@
   ],
   "start_url": "/lorem-pwa/index.html",
   "display": "standalone",
-  "background_color": "#0c222f",
+  "background_color": "#ffffff",
   "theme_color": "#153047"
 }
