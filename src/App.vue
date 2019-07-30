@@ -2,18 +2,21 @@
   <div id="app">
     <Choose @add_config="addConfig"/>
     <Main v-bind:counters="values"/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Choose from './components/Choose.vue'
 import Main from './components/Main.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
     Main,
-    Choose
+    Choose,
+    Footer
   },
   data: function () {
     return {

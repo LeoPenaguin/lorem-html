@@ -11,10 +11,11 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "vue": "^2.5.2",
     "highlight.js": "^9.15.8",
     "lorem-ipsum": "^2.0.3",
     "prettify-html": "0.0.2",
+    "vue": "^2.5.2",
+    "vue-custom-scrollbar": "^1.1.0",
     "vue-highlight.js": "^3.1.0"
   },
   "devDependencies": {

@@ -4,9 +4,10 @@
         <highlight-code lang='xml'>
           {{content}}
         </highlight-code>
+        <textarea id='code-copy' v-model="content"></textarea>
     </div>
     <div class='escaped'>
-      <span v-html='content'></span>
+      <span id="rendered" v-html='content'></span>
     </div>
   </div>
 </template>
@@ -48,6 +49,10 @@ export default {
   }
   .code {
     width: 50vw;
+    padding: 2rem;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: auto;
     pre {
       margin: 0;
       height: 100%;
@@ -57,14 +62,20 @@ export default {
         height: 100%;
         background: transparent;
         font-size: 1.5rem;
-        padding: 2rem;
         box-sizing: border-box;
+        padding: 0;
+        overflow: inherit;
       }
+    }
+    #code-copy {
+      display: none;
     }
   }
   .escaped {
     width: 50vw;
+    margin: 0;
     padding: 2rem;
+    border-left: 2px dashed #153047;
     word-break: break-all;
     overflow: scroll;
     box-sizing: border-box;
@@ -121,4 +132,16 @@ export default {
     }
   }
 }
+@media screen and (max-width: 580px) {
+  .main {
+    .code {
+      width: 100vw;
+      scroll-padding: 1rem;
+    }
+    .escaped {
+      display: none;
+    }
+  }
+}
+
 </style>
