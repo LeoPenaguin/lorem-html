@@ -119,6 +119,9 @@ export default {
         cursor: pointer;
         display: inline-flex;
         margin-right: 1rem;
+        &:focus {
+          outline: none;
+        }
         svg {
           height: 1.5rem;
           width: 1.5rem;
