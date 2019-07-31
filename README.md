@@ -1,6 +1,24 @@
 # lorem-pwa
 
-> A Vue.js project
+Hello, welcome in my little random HTML PWA project 😁.
+
+I hosted it here, on this repository's GitHub pages : [https://leopenaguin.github.io/lorem-pwa/](https://leopenaguin.github.io/lorem-pwa/)
+
+> I just needed a tool like this one and I usually think that **Lorem Ipsum generators** are ugly and too simple so I created **my own one** ! (Also I was bored, I'm sure it was a big reason too).
+
+What I used :
+- Vuejs
+- The Vue-CLI
+- Scss
+- the lorem-ipsum npm package
+- the prettify-html npm package
+- The highlight.js npm package
+- The serviceWorkerLoader for webpack
+- Visual studio code
+
+That's it 😁 You can visit my little blog [here](http://codebear.info) !
+
+Install procedure :
 
 ## Build Setup
 
@@ -17,5 +35,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

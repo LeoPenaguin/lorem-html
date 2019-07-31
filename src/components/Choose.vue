@@ -38,8 +38,8 @@ export default {
       this.emitToParent()
     },
     emitToParent: function () {
-      let lol = JSON.stringify(this.values)
-      this.$emit('add_config', lol)
+      let userValues = JSON.stringify(this.values)
+      this.$emit('add_config', userValues)
     },
     getRandomInt: function (max) {
       return Math.floor(Math.random() * Math.floor(max))
@@ -123,6 +123,9 @@ export default {
           height: 1.5rem;
           width: 1.5rem;
           margin: 0 1rem 0 0;
+        }
+        &:hover {
+          background: #009c68;
         }
       }
     }
