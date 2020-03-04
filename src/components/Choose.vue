@@ -3,7 +3,7 @@
     <div class="choose-content">
       <button class="random" v-on:click="randomize()">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#153047" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5M4 20L20.2 3.8M21 16v5h-5M15 15l5.1 5.1M4 4l5 5"/></svg>
-        Randomize
+        Randomizzzze
       </button>
       <button class="component" v-for="(item, key) in values"
               v-bind:key="key"

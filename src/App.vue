@@ -3,7 +3,6 @@
     <Choose @add_config="addConfig"/>
     <Main v-bind:counters="values"/>
     <Footer/>
-    test
   </div>
 </template>
 
