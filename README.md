@@ -1,8 +1,8 @@
-# lorem-pwa
+# lorem-html
 
-Hello, welcome in my little random HTML PWA project 😁.
+Hello, welcome in my little random LOREM HTML project 😁.
 
-I hosted it here, on this repository's GitHub pages : [https://leopenaguin.github.io/lorem-pwa/](https://leopenaguin.github.io/lorem-pwa/)
+I hosted it here, on this repository's GitHub pages : [https://leopenaguin.github.io/lorem-html/](https://leopenaguin.github.io/lorem-html/)
 
 > I just needed a tool like this one and I usually think that **Lorem Ipsum generators** are ugly and too simple so I created **my own one** ! (Also I was bored, I'm sure it was a big reason too).
 
