@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    coucou
     <Choose @add_config="addConfig"/>
     <Main v-bind:counters="values"/>
     <Footer/>
