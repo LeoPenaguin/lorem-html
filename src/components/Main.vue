@@ -27,7 +27,7 @@ export default {
   },
   watch: {
     immediate: true,
-    counters: function (newVal, oldVal) { // watch it
+    counters: function (newVal) {
       let parsed = JSON.parse(newVal)
       let content = fillContent(parsed)
       this.content = prettifyHtml(content.join(''))

@@ -10,43 +10,43 @@ import {
 } from './lorem'
 
 function fillContent (parsed) {
-  let keys = Object.keys(parsed)
+  const keys = Object.keys(parsed)
 
   keys.forEach(key => {
-    let item = parsed[key]
-    let count = item.count
+    const item = parsed[key]
+    const count = item.count
 
     switch (key) {
       case 'p':
         item.values = getP(count)
-        break
+        break;
       case 'pre':
         item.values = getPre(count)
-        break
+        break;
       case 'h1':
         item.values = getHeadline(key, count, 3, 6)
-        break
+        break;
       case 'h2':
         item.values = getHeadline(key, count, 4, 8)
-        break
+        break;
       case 'h3':
         item.values = getHeadline(key, count, 5, 10)
-        break
+        break;
       case 'ol':
         item.values = getList(key, count, 5, 10)
-        break
+        break;
       case 'ul':
         item.values = getList(key, count, 5, 10)
-        break
+        break;
       case 'blockquote':
         item.values = getBlockquote(count)
-        break
+        break;
       case 'table':
         item.values = getTable(count)
-        break
+        break;
       default:
         console.error('Aucune balise correspondante')
-        break
+        break;
     }
 
     parsed[key] = item
@@ -56,11 +56,11 @@ function fillContent (parsed) {
 }
 
 function toHTML (parsed) {
-  let keys = Object.keys(parsed)
+  const keys = Object.keys(parsed)
   let compArray = []
 
   keys.forEach(key => {
-    let item = parsed[key]
+    const item = parsed[key]
     compArray = compArray.concat(item.values)
   })
 

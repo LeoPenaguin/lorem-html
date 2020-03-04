@@ -3,25 +3,25 @@
 import { loremIpsum } from 'lorem-ipsum'
 
 function getP (number) {
-  let loremOptions = {
+  const loremOptions = {
     count: 1,
     format: 'html',
     units: 'paragraph',
     sentenceLowerBound: 10, // Min. number of words per sentence.
     sentenceUpperBound: 20 // paragraph(s), 'sentence(s)', or 'word(s)'
-  }
+  };
 
-  let element = []
+  const element = []
 
   for (var i = 0; i < number; i++) {
-    element.push(loremIpsum(loremOptions))
+    element.push(loremIpsum(loremOptions));
   }
 
-  return element
+  return element;
 }
 
 function getPre (number) {
-  let loremOptions = {
+  const loremOptions = {
     count: 1,
     format: 'plain',
     units: 'paragraph',
@@ -29,7 +29,7 @@ function getPre (number) {
     sentenceUpperBound: 10
   }
 
-  let element = []
+  const element = []
 
   for (var i = 0; i < number; i++) {
     element.push('<pre>' + loremIpsum(loremOptions) + '</pre>')
@@ -39,7 +39,7 @@ function getPre (number) {
 }
 
 function getHeadline (key, number, minWords, maxWords) {
-  let loremOptions = {
+  const loremOptions = {
     count: 1,
     format: 'plain',
     units: 'sentence',
@@ -47,7 +47,7 @@ function getHeadline (key, number, minWords, maxWords) {
     sentenceUpperBound: maxWords
   }
 
-  let element = []
+  const element = []
 
   for (var i = 0; i < number; i++) {
     element.push('<' + key + '>' + loremIpsum(loremOptions) + '</' + key + '>')
@@ -57,7 +57,7 @@ function getHeadline (key, number, minWords, maxWords) {
 }
 
 function getList (key, number) {
-  let loremOptions = {
+  const loremOptions = {
     count: 1,
     format: 'plain',
     units: 'sentence',
@@ -65,7 +65,7 @@ function getList (key, number) {
     sentenceUpperBound: 4
   }
 
-  let element = []
+  const element = []
 
   for (var i = 0; i < number; i++) {
     let listItems = ''
@@ -80,7 +80,7 @@ function getList (key, number) {
 }
 
 function getBlockquote (number) {
-  let loremOptions = {
+  const loremOptions = {
     count: 1,
     format: 'plain',
     units: 'paragraph',
@@ -88,7 +88,7 @@ function getBlockquote (number) {
     sentenceUpperBound: 10
   }
 
-  let element = []
+  const element = []
 
   for (var i = 0; i < number; i++) {
     element.push('<blockquote>' + loremIpsum(loremOptions) + '</blockquote>')
@@ -98,7 +98,7 @@ function getBlockquote (number) {
 }
 
 function getTable (number) {
-  let loremOptions = {
+  const loremOptions = {
     count: 1,
     format: 'plain',
     units: 'sentence',
@@ -106,10 +106,10 @@ function getTable (number) {
     sentenceUpperBound: 4
   }
 
-  let element = []
+  const element = []
 
   for (var i = 0; i < number; i++) {
-    let table = []
+    const table = []
     table.push(
       '<table>',
       '<tr>',
@@ -138,4 +138,4 @@ function getTable (number) {
   return element
 }
 
-export {getP, getPre, getHeadline, getList, getBlockquote, getTable}
+export { getP, getPre, getHeadline, getList, getBlockquote, getTable }

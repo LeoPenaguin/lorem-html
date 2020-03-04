@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Choose @add_config="addConfig"/>
+    <Choose v-on:add_config="addConfig"/>
     <Main v-bind:counters="values"/>
     <Footer/>
   </div>
